@@ -163,7 +163,7 @@ public class LoginActivity extends AppCompatActivity implements  GoogleApiClient
         FirebaseUser currentUser = mAuth.getCurrentUser();
         String uid = currentUser.getUid();
         String email = currentUser.getEmail();
-        UserDataModel userDataModel =  new UserDataModel(uid,email,"","");
+        UserDataModel userDataModel =  new UserDataModel(uid,email);
         Log.e(TAG, "addUserInUserTable: " + userDataModel.toString());
         createUserPresenter.storeUser(userDataModel);
     }

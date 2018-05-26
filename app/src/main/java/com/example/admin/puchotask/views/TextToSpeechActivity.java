@@ -20,7 +20,7 @@ public class TextToSpeechActivity extends AppCompatActivity {
         String content = etInputText.getText().toString();
     }
 
-    public void start(Context context) {
+    public static void start(Context context) {
         Intent intent = new Intent(context, TextToSpeechActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);
