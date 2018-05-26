@@ -64,7 +64,8 @@ public class Log {
     @Exclude
     @Override
     public String toString() {
-        return "Log{" +
+        return "Log" +
+                ".{" +
                 "userId='" + userId + '\'' +
                 ", inputText='" + inputText + '\'' +
                 ", userEmail='" + inputText + '\'' +
